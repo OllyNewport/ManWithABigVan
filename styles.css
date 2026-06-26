@@ -1129,6 +1129,7 @@ h1 span {
   }
 
   .navbar {
+    position: relative;
     min-width: 0;
     gap: 12px;
   }
@@ -1146,9 +1147,9 @@ h1 span {
     flex: 0 0 46px;
     margin-left: auto;
     position: fixed;
-    top: 15px;
+    top: 12px;
     right: auto;
-    left: min(calc(100vw - 58px), 332px);
+    left: min(calc(100vw - 58px), 342px);
     z-index: 40;
   }
 
@@ -1172,6 +1173,15 @@ h1 span {
     width: 100%;
     max-width: 366px;
     min-width: 0;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .eyebrow,
+  .section-label {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
 
   h1 {
@@ -1187,14 +1197,18 @@ h1 span {
 
   .hero-subtitle {
     max-width: 30ch;
+    margin-right: auto;
     font-size: 1rem;
+    margin-left: auto;
   }
 
   .hero-actions,
   .quote-actions {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
+    width: min(100%, 360px);
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .button {
@@ -1205,15 +1219,25 @@ h1 span {
   .contact-line {
     display: grid;
     gap: 2px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .trust-badges {
+    justify-content: center;
   }
 
   .trust-badges span {
     flex: 1 1 100%;
+    justify-content: center;
   }
 
   .areas {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 360px);
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .areas span {
@@ -1237,6 +1261,21 @@ h1 span {
     padding: 62px 0;
   }
 
+  .section-heading,
+  .step-card,
+  .service-card,
+  .faq-list article,
+  .contact-panel,
+  .reviews-heading,
+  .reviews-summary {
+    text-align: center;
+  }
+
+  .step-card span {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .contact-shell {
     padding: 58px 0 44px;
   }
@@ -1248,6 +1287,7 @@ h1 span {
   .quote-form-card label {
     margin-bottom: 16px;
     font-size: 0.95rem;
+    text-align: center;
   }
 
   .quote-form-card input {
@@ -1261,12 +1301,15 @@ h1 span {
 
   .contact-panel > p {
     font-size: 1rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .contact-methods a {
     grid-template-columns: 14px minmax(0, 1fr);
     gap: 10px;
     overflow-wrap: anywhere;
+    text-align: left;
   }
 
   .reviews-showcase {
@@ -1278,6 +1321,7 @@ h1 span {
   }
 
   .reviews-summary {
+    justify-content: center;
     align-items: flex-start;
     padding: 20px;
   }
